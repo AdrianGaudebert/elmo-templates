@@ -24,7 +24,8 @@ a:hover {
 	text-decoration: 	underline;
 }
 
-h1 {
+h1,
+nav a {
 	font-family: MetaBold, 'Trebuchet MS', sans-serif;
 }
 
@@ -67,7 +68,6 @@ nav {
 		display: inline;
 	}
 	nav a {
-		font-family: MetaBold, Trebuchet MS, sans-serif;
 		font-size: 1.1em;
 		padding: 3px 6px;
 	}
