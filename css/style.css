@@ -71,6 +71,9 @@ nav {
 		font-size: 1.1em;
 		padding: 3px 6px;
 	}
+	nav a.homepage-link {
+		color: #2a2a2a;
+	}
 
 #quick-search {
 	white-space: nowrap;
