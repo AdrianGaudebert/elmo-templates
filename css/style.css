@@ -34,7 +34,7 @@ h1 {
 nav,
 body > header .header-content,
 body > footer .footer-content,
-#main-content {
+#body-content {
   margin-left: 	auto;
   margin-right: auto;
   width: 		960px;
@@ -82,6 +82,7 @@ nav {
 		background: #fff url(../images/search-icon.png) 2px 50% no-repeat;
 		border: 1px solid #1e4262;
 		-moz-box-shadow: inset 1px 1px 1px rgba(100,100,100,0.5);
+		box-shadow: inset 1px 1px 1px rgba(100,100,100,0.5);
 		color: #999;
 		font-size: 11px;
 		height: 17px;
@@ -106,7 +107,6 @@ body > header {
 	margin-bottom: 	80px;
 	padding: 		10px 0;
 	position:		relative;
-	zoom: 			1;
 }
 	body > header .header-background {
 		background: 	#2a2a2a;
@@ -147,75 +147,84 @@ body > header {
 /* }}} */
 /* {{{ Content */
 
-#main-content h1 {
+#body-content h1 {
 	font-size: 1.5em;
 }
-#main-content ul,
-#main-content p {
+#body-content ul,
+#body-content p {
 	margin-bottom: 15px;
 }
-	#main-content ul.double {
+	#body-content ul.double {
 		float: left;
 		width: 49%;
 	}
-#main-content li {
+#body-content li {
 	list-style-position: inside;
 }
 
-#main-content section,
-#main-content article {
+#body-content section,
+#body-content article {
 	margin-bottom: 30px;
 }
-	#main-content aside section,
-	#main-content > section article.getting-started {
+	#body-content aside section,
+	#main-content .getting-started {
 		border-radius: 4px;
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
 		box-shadow: 1px 1px 4px #999;
+			-moz-box-shadow: 1px 1px 4px #999;
+			-webkit-box-shadow: 1px 1px 4px #999;
 		padding: 10px 15px;
 	}
 
-#main-content aside {
-	float: right;
-	width: 240px;
-}
-	#main-content aside section {
+	#body-content aside {
+		float: left;
+		width: 240px;
+	}
+		#body-content aside header {
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 15px;
+			margin-bottom: 20px;
+		}
+			#body-content aside header h1 {
+				font-size: 1.3em;
+			}
+			#body-content aside header a {
+				float: right;
+			}
+	#body-content section {
 		background-image: url(../images/aside-background.jpg);
 		background-repeat: no-repeat;
 		background-position: 0 bottom;
 	}
-	#main-content aside header {
-		border-bottom: 1px solid #ccc;
-		padding-bottom: 15px;
-		margin-bottom: 20px;
-	}
-		#main-content aside header h1 {
-			font-size: 1.3em;
-		}
-		#main-content aside header a {
-			float: right;
-		}
-#main-content > section {
-	clear: left;
-	width: 700px;
+
+#main-content {
+	float: left;
+	min-width: 720px;
 }
-	#main-content > section article {
+	#main-content section {
+		clear: left;
+		min-width: 700px;
+	}
+	#main-content article {
 		float: left;
 		width: 320px;
 		margin-right: 20px;
 		padding: 5px 5px;
 	}
-		#main-content > section article.getting-started {
-			background-image: url(../images/getting-started-background.jpg);
-			background-repeat: no-repeat;
-			background-position: 0 bottom;
+	#main-content article.getting-started {
+		background-image: url(../images/getting-started-background.jpg);
+		background-repeat: no-repeat;
+		background-position: 0 bottom;
+	}
+	#main-content article.getting-started,
+	#main-content article.for-dev{
+		width: 670px;
+	}
+		#main-content article.getting-started h1,
+		#body-content aside h1 {
+			color: #a5151e;
 		}
-		#main-content > section article.getting-started,
-		#main-content > section article.for-dev{
-			width: 670px;
-		}
-			#main-content > section article.getting-started h1,
-			#main-content aside h1 {
-				color: #a5151e;
-			}
 
 /* }}} */
 /* {{{ Footer */
