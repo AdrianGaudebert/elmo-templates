@@ -177,6 +177,11 @@ body > header {
 	float: right;
 	width: 240px;
 }
+	#main-content aside section {
+		background-image: url(../images/aside-background.jpg);
+		background-repeat: no-repeat;
+		background-position: 0 bottom;
+	}
 	#main-content aside header {
 		border-bottom: 1px solid #ccc;
 		padding-bottom: 15px;
@@ -198,6 +203,11 @@ body > header {
 		margin-right: 20px;
 		padding: 5px 5px;
 	}
+		#main-content > section article.getting-started {
+			background-image: url(../images/getting-started-background.jpg);
+			background-repeat: no-repeat;
+			background-position: 0 bottom;
+		}
 		#main-content > section article.getting-started,
 		#main-content > section article.for-dev{
 			width: 670px;
