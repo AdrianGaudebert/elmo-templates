@@ -113,10 +113,17 @@ body > header {
 		background: 	rgba(38,38,38,0.98);
 		border-bottom: 	10px solid #a5151e;
 		height: 		100%;
-		margin: 		0 0 15px 15%;
+		margin: 		0 0 15px 0;
 		position: 		absolute;
+		right:			0;
 		width: 			85%;
+		min-width:		1000px;
 		z-index: 		-1;
+	}
+	@media (min-width: 1000px) {
+		body > header .header-background {
+			width: 1200px;
+		}
 	}
 	body > header h1 {
 		margin: 		0;
@@ -193,6 +200,7 @@ body > header {
 				float: right;
 			}
 	#body-content section {
+		background-color: white;
 		background-image: url(../images/aside-background.jpg);
 		background-repeat: no-repeat;
 		background-position: 0 bottom;
@@ -213,6 +221,7 @@ body > header {
 		padding: 5px 5px;
 	}
 	#main-content article.getting-started {
+		background-color: white;
 		background-image: url(../images/getting-started-background.jpg);
 		background-repeat: no-repeat;
 		background-position: 0 bottom;
