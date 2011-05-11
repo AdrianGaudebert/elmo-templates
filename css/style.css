@@ -143,7 +143,7 @@ body > header {
 						 0 0 10px rgba(255,255,255,0.4);
 		}
 		body > header .header-content p {
-		  width: 460px;
+		  max-width: 460px;
 		}
 
 /* }}} */
@@ -215,14 +215,14 @@ body > header {
 		margin-right: 20px;
 		padding: 5px 5px;
 	}
-	#main-content article.getting-started {
+	#main-content .getting-started {
 		background-color: white;
 		background-image: url(../images/getting-started-background.jpg);
 		background-repeat: no-repeat;
 		background-position: 0 bottom;
 	}
-	#main-content article.getting-started,
-	#main-content article.for-dev{
+	#main-content .getting-started,
+	#main-content .for-dev{
 		width: 670px;
 	}
 		#main-content article.getting-started h1,
@@ -291,11 +291,55 @@ body > footer {
 }
 
 /* }}} */
+/* {{{ Media Queries */
 
-
+/* Fixing the header's and footer's background scaling problem */
 @media (min-width: 1000px) and (max-width: 1500px) {
+
 	body > footer .footer-background,
 	body > header .header-background {
 		width: 90%;
 	}
+
 }
+
+/* Small screens */
+@media (max-width: 960px) {
+
+	/* { border: 1px solid red; }*/
+
+	body {
+		min-width: 100%;
+	}
+	body > *,
+	body > header .header-content {
+		padding: 0 5px;
+	}
+
+	nav,
+	body > header .header-content,
+	body > footer .footer-content,
+	#body-content,
+	#body-content aside,
+	#main-content,
+	#main-content section,
+	#main-content article,
+	#main-content .getting-started,
+	#main-content .for-dev {
+		width: 		98%;
+		min-width: 	0;
+	}
+
+	#body-content aside section {
+		float: left;
+		margin-right: 20px;
+		width: 210px;
+	}
+
+	#template-bottom-background {
+		padding: 0;
+	}
+
+}
+
+/* }}} */
