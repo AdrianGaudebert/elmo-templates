@@ -16,6 +16,7 @@ img {
 }
 a,
 a:link,
+a:active,
 a:visited {
     color: 				#2987AD;
 	text-decoration: 	none;
@@ -128,7 +129,9 @@ body > header {
 		z-index: 		1;
 	}
 		body > header h1 a,
-		body > header h1 span {
+		body > header h1 a:link,
+		body > header h1 a:active,
+		body > header h1 a:visited {
 			display: inline;
 			font-weight: bold;
 			letter-spacing: -2px;
@@ -138,12 +141,14 @@ body > header {
 			padding: 0;
 			text-shadow: 0 1px 5px rgba(0,0,0,0.4);
 		}
-		body > header h1 span:hover,
 		body > header h1 a:hover {
 			text-decoration: none;
 			color: #eee;
 			text-shadow: 0 1px 5px rgba(0,0,0,0.4),
 						 0 0 10px rgba(255,255,255,0.4);
+		}
+		body > header h1 span {
+			color: grey;
 		}
 		body > header .header-content p {
 		  max-width: 460px;
