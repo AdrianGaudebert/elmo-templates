@@ -117,13 +117,8 @@ body > header {
 		position: 		absolute;
 		right:			0;
 		width: 			85%;
-		min-width:		1000px;
+		min-width:		1100px;
 		z-index: 		-1;
-	}
-	@media (min-width: 1000px) {
-		body > header .header-background {
-			width: 1200px;
-		}
 	}
 	body > header h1 {
 		margin: 		0;
@@ -250,7 +245,9 @@ body > footer {
 		height: 		100%;
 		margin: 		0 0 0 15%;
 		position: 		absolute;
+		right:			0;
 		width: 			85%;
+		min-width:		1100px;
 		z-index: 		-1;
 	}
 	body > footer .footer-content {
@@ -294,3 +291,11 @@ body > footer {
 }
 
 /* }}} */
+
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+	body > footer .footer-background,
+	body > header .header-background {
+		width: 90%;
+	}
+}
