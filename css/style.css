@@ -483,7 +483,8 @@ body > footer {
 	}
 	body > *,
 	body > header .header-content {
-		padding: 0 5px;
+		padding-left: 	5px;
+		padding-right: 	5px;
 	}
 
 	nav,
@@ -503,7 +504,7 @@ body > footer {
 	#body-content aside section {
 		float: left;
 		margin-right: 20px;
-		width: 210px;
+		width: 200px;
 	}
 
 	#template-bottom-background {
