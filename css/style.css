@@ -415,7 +415,7 @@ body > footer {
 }
 
 /* }}} */
-/* {{{ Team page */
+/* {{{ Team and Product overview pages */
 
 .team-intro-table p {
 	width: 75%;
@@ -427,18 +427,21 @@ body > footer {
 	width: 			25%;
 }
 
-	#localized-projects-overview header {
+	.locale-overview header {
 		margin-bottom: 10px;
 	}
-		#localized-projects-overview header h1 {
+		.locale-overview header h1 {
 			display: inline;
 		}
-		#localized-projects-overview header p {
+		.locale-overview header p {
 			display: inline;
 			padding-left: 20px;
 		}
-		#localized-projects-overview header select {
+		.locale-overview header select {
 			float: right;
+		}
+		.locale-overview header + * {
+			border-top: 				1px solid #ccc;
 		}
 	#localized-projects-overview table {
 		border-collapse: collapse;
@@ -462,6 +465,16 @@ body > footer {
 		#localized-projects-overview td span {
 			display: 	block;
 		}
+
+.green-bullet {
+	background-color: 			green;
+	border-radius: 				8px;
+		-webkit-border-radius: 	8px;
+		-moz-border-radius: 	8px;
+	display: 					inline-block;
+	height: 					10px;
+	width: 						10px;
+}
 
 /* }}} */
 /* {{{ Media Queries */
