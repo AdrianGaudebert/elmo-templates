@@ -169,32 +169,32 @@ body#home > header {
 			}
 
 #header-nav {
-	list-style-type: none;
-	margin: 0;
-	float: left;
-	height: 100%;
+	list-style-type: 	none;
+	margin: 			0;
+	float: 				left;
+	height: 			100%;
 }
 	#header-nav li {
-		background: none;
-		padding: 0;
-		float: left;
-		position: relative;
-		height: 100%;
+		background: 	none;
+		padding: 		0;
+		float: 			left;
+		position: 		relative;
+		height: 		100%;
 	}
 	#header-nav a,
 	#header-nav span {
-		color: #ccc;
-		display: block;
-		padding: 25px 15px;
-		font-family: MetaBold, Trebuchet MS, sans-serif;
-		font-weight: bold;
-		font-size: 1.2em;
-		height: 100%;
+		color: 			#ccc;
+		display: 		block;
+		padding: 		25px 15px 0 15px;
+		font-family: 	MetaBold, 'Trebuchet MS', sans-serif;
+		font-weight: 	bold;
+		font-size: 		1.2em;
+		height: 		100%;
 	}
 	#header-nav a:hover,
 	#header-nav a:focus {
-		text-decoration: none;
-		color: #f59d56;
+		text-decoration: 	none;
+		color: 				#f59d56;
 	}
 	#header-nav li.selected a,
 	#header-nav li.on a {
@@ -202,17 +202,17 @@ body#home > header {
 	}
 	#header-nav li.selected:after,
 	#header-nav li.on:after {
-		content: "";
-		height: 0;
-		position: absolute;
-		width: 0;
+		content: 				"";
+		height: 				0;
+		position: 				absolute;
+		width: 					0;
 
-		border: 10px solid transparent;
-		border-bottom-color: #a5151e;
+		border: 				10px solid transparent;
+		border-bottom-color: 	#a5151e;
 
-		bottom: 0;
-		left: 50%;
-		margin-left: -5px;
+		bottom: 				0;
+		left: 					50%;
+		margin-left: 			-5px;
 	}
 
 /* }}} */
@@ -250,7 +250,7 @@ body#home > header {
 
 	#body-content aside {
 		float: left;
-		width: 240px;
+		width: 228px;
 	}
 		#body-content aside header {
 			border-bottom: 1px solid #ccc;
@@ -267,32 +267,32 @@ body#home > header {
 		background-color: white;
 		background-image: url(../images/aside-background.jpg);
 		background-repeat: no-repeat;
-		background-position: 0 bottom;
+		background-position: bottom;
 	}
 
 #main-content {
-	float: left;
-	min-width: 720px;
+	float: 		left;
+	width: 		732px;
 }
 	#main-content section {
 		clear: left;
-		min-width: 700px;
 	}
 	#main-content article {
-		float: left;
-		width: 320px;
-		margin-right: 20px;
-		padding: 5px 5px;
+		float: 			left;
+		width: 			326px;
+		margin-right: 	20px;
+		padding: 		5px 5px;
+	}
+	#main-content .full {
+		min-width: 		707px;
+		margin-right: 	0;
 	}
 	#main-content .introduction {
 		background-color: white;
 		background-image: url(../images/introduction-background.jpg);
 		background-repeat: no-repeat;
 		background-position: bottom right;
-	}
-	#main-content .introduction,
-	#main-content .for-dev{
-		width: 670px;
+		min-width: 679px;
 	}
 		#main-content article.introduction h1,
 		#body-content aside h1 {
@@ -360,6 +360,55 @@ body > footer {
 }
 
 /* }}} */
+/* {{{ Team page */
+
+.team-intro-table p {
+	width: 75%;
+}
+.team-intro-table p.title {
+	clear: 			left;
+	float: 			left;
+	font-weight: 	bold;
+	width: 			25%;
+}
+
+	#team-projects-overview header {
+		margin-bottom: 10px;
+	}
+		#team-projects-overview header h1 {
+			display: inline;
+		}
+		#team-projects-overview header p {
+			display: inline;
+			padding-left: 20px;
+		}
+		#team-projects-overview header select {
+			float: right;
+		}
+	#team-projects-overview table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+	#team-projects-overview tr {
+		background-color: 			#eee; /* fallback color if gradients are not supported */
+
+		background-image: 	-webkit-gradient(linear, left top, left bottom, from(white), to(#eee));
+		background-image: 	-webkit-linear-gradient(top, white, #eee);
+		background-image:      -moz-linear-gradient(top, white, #eee);
+		background-image:     	-ms-linear-gradient(top, white, #eee);
+		background-image:      	 -o-linear-gradient(top, white, #eee);
+		background-image:         	linear-gradient(top, white, #eee);
+		border-top: 				1px solid #ccc;
+	}
+	#team-projects-overview td {
+		padding: 		10px 7px;
+		vertical-align: top;
+	}
+		#team-projects-overview td span {
+			display: 	block;
+		}
+
+/* }}} */
 /* {{{ Media Queries */
 
 /* Fixing the header's and footer's background scaling problem */
@@ -394,7 +443,7 @@ body > footer {
 	#main-content section,
 	#main-content article,
 	#main-content .introduction,
-	#main-content .for-dev {
+	#main-content .full {
 		width: 		98%;
 		min-width: 	0;
 	}
@@ -409,19 +458,6 @@ body > footer {
 		padding: 0;
 	}
 
-}
-
-/* }}} */
-/* {{{ Team page */
-
-.team-intro-table p {
-	width: 75%;
-}
-.team-intro-table p.title {
-	clear: left;
-	float: left;
-	font-weight: bold;
-	width: 25%;
 }
 
 /* }}} */
