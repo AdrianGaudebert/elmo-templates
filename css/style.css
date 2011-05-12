@@ -238,7 +238,7 @@ body#home > header {
 	margin-bottom: 30px;
 }
 	#body-content aside section,
-	#main-content .getting-started {
+	#main-content .introduction {
 		border-radius: 4px;
 			-moz-border-radius: 4px;
 			-webkit-border-radius: 4px;
@@ -284,17 +284,17 @@ body#home > header {
 		margin-right: 20px;
 		padding: 5px 5px;
 	}
-	#main-content .getting-started {
+	#main-content .introduction {
 		background-color: white;
-		background-image: url(../images/getting-started-background.jpg);
+		background-image: url(../images/introduction-background.jpg);
 		background-repeat: no-repeat;
 		background-position: 0 bottom;
 	}
-	#main-content .getting-started,
+	#main-content .introduction,
 	#main-content .for-dev{
 		width: 670px;
 	}
-		#main-content article.getting-started h1,
+		#main-content article.introduction h1,
 		#body-content aside h1 {
 			color: #a5151e;
 		}
@@ -393,7 +393,7 @@ body > footer {
 	#main-content,
 	#main-content section,
 	#main-content article,
-	#main-content .getting-started,
+	#main-content .introduction,
 	#main-content .for-dev {
 		width: 		98%;
 		min-width: 	0;
