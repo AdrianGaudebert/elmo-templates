@@ -288,7 +288,7 @@ body#home > header {
 		background-color: white;
 		background-image: url(../images/introduction-background.jpg);
 		background-repeat: no-repeat;
-		background-position: 0 bottom;
+		background-position: bottom right;
 	}
 	#main-content .introduction,
 	#main-content .for-dev{
@@ -409,6 +409,19 @@ body > footer {
 		padding: 0;
 	}
 
+}
+
+/* }}} */
+/* {{{ Team page */
+
+.team-intro-table p {
+	width: 75%;
+}
+.team-intro-table p.title {
+	clear: left;
+	float: left;
+	font-weight: bold;
+	width: 25%;
 }
 
 /* }}} */
