@@ -136,8 +136,8 @@ body#home > header {
 	body > header h1 {
 		float: 			left;
 		margin: 		0;
-		z-index: 		2;
 		min-width:		270px;
+		z-index: 		2;
 	}
 		body > header h1 a,
 		body > header h1 a:link,
@@ -159,8 +159,11 @@ body#home > header {
 			text-shadow: 0 1px 5px rgba(0,0,0,0.4),
 						 0 0 10px rgba(255,255,255,0.4);
 		}
+		body > header h1 img {
+			vertical-align:	middle;
+		}
 		body > header h1 span {
-			color: grey;
+			color: gray;
 		}
 		body > header .header-content {
 			height: 100%;
@@ -424,24 +427,24 @@ body > footer {
 	width: 			25%;
 }
 
-	#team-projects-overview header {
+	#localized-projects-overview header {
 		margin-bottom: 10px;
 	}
-		#team-projects-overview header h1 {
+		#localized-projects-overview header h1 {
 			display: inline;
 		}
-		#team-projects-overview header p {
+		#localized-projects-overview header p {
 			display: inline;
 			padding-left: 20px;
 		}
-		#team-projects-overview header select {
+		#localized-projects-overview header select {
 			float: right;
 		}
-	#team-projects-overview table {
+	#localized-projects-overview table {
 		border-collapse: collapse;
 		width: 100%;
 	}
-	#team-projects-overview tr {
+	#localized-projects-overview tr {
 		background-color: 			#eee; /* fallback color if gradients are not supported */
 
 		background-image: 	-webkit-gradient(linear, left top, left bottom, from(white), to(#eee));
@@ -452,11 +455,11 @@ body > footer {
 		background-image:         	linear-gradient(top, white, #eee);
 		border-top: 				1px solid #ccc;
 	}
-	#team-projects-overview td {
+	#localized-projects-overview td {
 		padding: 		10px 7px;
 		vertical-align: top;
 	}
-		#team-projects-overview td span {
+		#localized-projects-overview td span {
 			display: 	block;
 		}
 
