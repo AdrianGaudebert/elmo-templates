@@ -301,6 +301,9 @@ body#home > header {
 		float: left;
 		width: 228px;
 	}
+	#body-content aside .date {
+		color: #666;
+	}
 		#body-content aside header {
 			border-bottom: 1px solid #ccc;
 			padding-bottom: 15px;
