@@ -21,7 +21,8 @@ a:visited {
     color: 				#2987AD;
 	text-decoration: 	none;
 }
-a:hover {
+a:hover,
+a:focus {
 	text-decoration: 	underline;
 }
 
@@ -108,9 +109,14 @@ nav {
 
 body > header {
 	color: 			#999;
+	height: 		80px;
+	min-height: 	80px;
 	margin-bottom: 	80px;
 	padding: 		10px 0;
 	position:		relative;
+}
+body#home > header {
+	height: auto;
 }
 	body > header .header-background {
 		background: 	#2a2a2a;
@@ -125,8 +131,10 @@ body > header {
 		z-index: 		-1;
 	}
 	body > header h1 {
+		float: 			left;
 		margin: 		0;
-		z-index: 		1;
+		z-index: 		2;
+		min-width:		270px;
 	}
 		body > header h1 a,
 		body > header h1 a:link,
@@ -135,13 +143,14 @@ body > header {
 			display: inline;
 			font-weight: bold;
 			letter-spacing: -2px;
-			font-size: 50px;
+			font-size: 40px;
 			color: #fff;
 			text-decoration: none;
 			padding: 0;
 			text-shadow: 0 1px 5px rgba(0,0,0,0.4);
 		}
-		body > header h1 a:hover {
+		body > header h1 a:hover,
+		body > header h1 a:focus {
 			text-decoration: none;
 			color: #eee;
 			text-shadow: 0 1px 5px rgba(0,0,0,0.4),
@@ -150,9 +159,61 @@ body > header {
 		body > header h1 span {
 			color: grey;
 		}
-		body > header .header-content p {
-		  max-width: 460px;
+		body > header .header-content {
+			height: 100%;
+			padding: 20px 0 0 0;
 		}
+			body > header .header-content p {
+				clear: both;
+				max-width: 460px;
+			}
+
+#header-nav {
+	list-style-type: none;
+	margin: 0;
+	float: left;
+	height: 100%;
+}
+	#header-nav li {
+		background: none;
+		padding: 0;
+		float: left;
+		position: relative;
+		height: 100%;
+	}
+	#header-nav a,
+	#header-nav span {
+		color: #ccc;
+		display: block;
+		padding: 25px 15px;
+		font-family: MetaBold, Trebuchet MS, sans-serif;
+		font-weight: bold;
+		font-size: 1.2em;
+		height: 100%;
+	}
+	#header-nav a:hover,
+	#header-nav a:focus {
+		text-decoration: none;
+		color: #f59d56;
+	}
+	#header-nav li.selected a,
+	#header-nav li.on a {
+		color: white;
+	}
+	#header-nav li.selected:after,
+	#header-nav li.on:after {
+		content: "";
+		height: 0;
+		position: absolute;
+		width: 0;
+
+		border: 10px solid transparent;
+		border-bottom-color: #a5151e;
+
+		bottom: 0;
+		left: 50%;
+		margin-left: -5px;
+	}
 
 /* }}} */
 /* {{{ Content */
