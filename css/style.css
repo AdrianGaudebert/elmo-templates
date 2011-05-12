@@ -27,7 +27,10 @@ a:focus {
 }
 
 h1,
-nav a {
+nav a,
+#header-nav a,
+#header-nav span,
+#header-options .button {
 	font-family: MetaBold, 'Trebuchet MS', sans-serif;
 }
 
@@ -186,7 +189,6 @@ body#home > header {
 		color: 			#ccc;
 		display: 		block;
 		padding: 		25px 15px 0 15px;
-		font-family: 	MetaBold, 'Trebuchet MS', sans-serif;
 		font-weight: 	bold;
 		font-size: 		1.2em;
 		height: 		100%;
@@ -213,6 +215,53 @@ body#home > header {
 		bottom: 				0;
 		left: 					50%;
 		margin-left: 			-5px;
+	}
+
+#header-options {
+	float: right;
+	padding: 20px 0 0 0;
+}
+	#header-options .button {
+		background-color: 			#deb154;
+
+		background-image: 	-webkit-gradient(linear, left top, left bottom, from(#e5cf55), to(#c3752d));
+		background-image: 	-webkit-linear-gradient(top, #e5cf55, #deb154 50%,#d5a42e 50%, #c3752d);
+		background-image: 	   -moz-linear-gradient(top, #e5cf55, #deb154 50%,#d5a42e 50%, #c3752d);
+		background-image:     	-ms-linear-gradient(top, #e5cf55, #deb154 50%,#d5a42e 50%, #c3752d);
+		background-image:      	 -o-linear-gradient(top, #e5cf55, #deb154 50%,#d5a42e 50%, #c3752d);
+		background-image:         	linear-gradient(top, #e5cf55, #deb154 50%,#d5a42e 50%, #c3752d);
+
+		border: 					1px solid #ac5e1e;
+		border-radius: 				6px;
+			-moz-border-radius: 	6px;
+			-webkit-border-radius: 	6px;
+
+		color: 						#a5151e;
+		font-size: 					1.1em;
+		margin-left: 5px;
+		padding: 					5px 30px;
+		text-shadow: 				0px 1px 1px white;
+	}
+	#header-options .button:hover,
+	#header-options .button:focus {
+		text-decoration: none;
+		background-image: none;
+	}
+	#header-options .settings {
+		background-color: 			#d7dadf;
+
+		background-image: 	-webkit-gradient(linear, left top, left bottom, from(#eaebed), to(#b7bcc0));
+		background-image: 	-webkit-linear-gradient(top, #eaebed, #d7dadf 50%,#cecfd4 50%, #b7bcc0);
+		background-image: 	   -moz-linear-gradient(top, #eaebed, #d7dadf 50%,#cecfd4 50%, #b7bcc0);
+		background-image:     	-ms-linear-gradient(top, #eaebed, #d7dadf 50%,#cecfd4 50%, #b7bcc0);
+		background-image:      	 -o-linear-gradient(top, #eaebed, #d7dadf 50%,#cecfd4 50%, #b7bcc0);
+		background-image:         	linear-gradient(top, #eaebed, #d7dadf 50%,#cecfd4 50%, #b7bcc0);
+
+		border-color: 				#9fa0a4;
+		padding: 					5px 6px;
+	}
+	#header-options .settings img {
+		vertical-align: middle;
 	}
 
 /* }}} */
