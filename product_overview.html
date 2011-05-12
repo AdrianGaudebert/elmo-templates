@@ -44,7 +44,12 @@
 		<header>
 			<div class="header-background"></div>
 			<div class="header-content">
-				<h1><a href="/" title="Back to home page">Title <span class="lang">lang</span></a></h1>
+				<h1>
+					<a href="/" title="Back to home page">
+						<img src="images/logos/firefox.png" alt="" />
+						Firefox 4
+					</a>
+				</h1>
 
 				<ul id="header-nav">
 					<li class="selected"><a href="">Overview</a></li>
@@ -63,7 +68,137 @@
 		<div id="body-content">
 			<div id="main-content">
 				<section>
-					<article>
+					<article class="full introduction">
+						<p>Introductory blurb about the team and it's goals. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. </p>
+						<div class="team-intro-table">
+							<p class="title">Home Page</p>
+							<p><a href="">http://loremipsum.com</a></p>
+
+							<p class="title">Bugzilla</p>
+							<p><a href="">All Open Bugs</a> / <a href="">File a Bug</a></p>
+
+							<p class="title">Newsgroup</p>
+							<p><a href="">http://loremipsum.com</a></p>
+
+							<p class="title">Mailing List</p>
+							<p><a href="">http://loremipsum.com</a></p>
+
+							<p class="title">Leads</p>
+							<p><a href="">http://loremipsum.com</a></p>
+						</div>
+					</article>
+				</section>
+
+				<section>
+					<article class="full" id="localized-projects-overview">
+						<header>
+							<h1>Localized Projects</h1>
+							<p><a href="">See all active projects &gt;&gt;</a></p>
+							<select>
+								<option>Recently Active</option>
+								<option>Something Else</option>
+								<option>Another Option</option>
+							</select>
+						</header>
+
+						<table>
+							<tr>
+								<td><img src="images/logos/firefox.png" alt="" /></td>
+								<td>
+									<strong><a href="">Firefox 3.7</a></strong>
+									<span><a href="">fx37</a></span>
+								</td>
+								<td>
+									<strong>1,234</strong>
+									<span>strings</span>
+								</td>
+								<td>
+									<strong>78%</strong> complete
+									<span>progress bar</span>
+								</td>
+								<td><img src="images/icon-graph-line.png" alt="" /></td>
+								<td>
+									<strong>3 open tasks</strong>
+									<span>50% complete</span>
+								</td>
+								<td>
+									<strong>3 open bugs</strong>
+									<span>Latest: 2010/12/31</span>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="images/logos/firefox.png" alt="" /></td>
+								<td>
+									<strong><a href="">Firefox Mobile 1.1</a></strong>
+									<span><a href="">fennec11x</a></span>
+								</td>
+								<td>
+									<strong>1,234</strong>
+									<span>strings</span>
+								</td>
+								<td>
+									<strong>78%</strong> complete
+									<span>progress bar</span>
+								</td>
+								<td><img src="images/icon-graph-line.png" alt="" /></td>
+								<td>
+									<strong>3 open tasks</strong>
+									<span>50% complete</span>
+								</td>
+								<td>
+									<strong>3 open bugs</strong>
+									<span>Latest: 2010/12/31</span>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="images/logos/thunderbird.png" alt="" /></td>
+								<td>
+									<strong><a href="">Thunderbird 3.1</a></strong>
+									<span><a href="">tb31x</a></span>
+								</td>
+								<td>
+									<strong>1,234</strong>
+									<span>strings</span>
+								</td>
+								<td>
+									<strong>78%</strong> complete
+									<span>progress bar</span>
+								</td>
+								<td><img src="images/icon-graph-line.png" alt="" /></td>
+								<td>
+									<strong>3 open tasks</strong>
+									<span>50% complete</span>
+								</td>
+								<td>
+									<strong>3 open bugs</strong>
+									<span>Latest: 2010/12/31</span>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="images/logos/amo.png" alt="" /></td>
+								<td>
+									<strong><a href="">addons.mozilla.org</a></strong>
+									<span><a href="">amo</a></span>
+								</td>
+								<td>
+									<strong>1,234</strong>
+									<span>strings</span>
+								</td>
+								<td>
+									<strong>78%</strong> complete
+									<span>progress bar</span>
+								</td>
+								<td><img src="images/icon-graph-line.png" alt="" /></td>
+								<td>
+									<strong>3 open tasks</strong>
+									<span>50% complete</span>
+								</td>
+								<td>
+									<strong>3 open bugs</strong>
+									<span>Latest: 2010/12/31</span>
+								</td>
+							</tr>
+						</table>
 					</article>
 				</section>
 			</div>
@@ -72,13 +207,56 @@
 				<section>
 					<header>
 						<a href=""><img src="images/icons/feed.png" alt="" /></a>
-						<h1>Title</h1>
+						<h1>Announcements</h1>
 					</header>
 
-					<p><a href="">Content</a></p>
+					<p>
+						<strong><a href="">New URL for l10n community server</a></strong>
+						<span class="date">L10n, 2 days ago</span>
+					</p>
+					<p>
+						<strong><a href="">Welcome Julio Cheatam, new Nadsat l10n lead.</a></strong>
+						<span class="date">Nadsat, 6 days ago</span>
+					</p>
+					<p>
+						<strong><a href="">Lorem ipsum dolor sit amet</a></strong>
+						<span class="date">Lorem, 2 weeks ago</span>
+					</p>
 				</section>
 
+				<section>
+					<header>
+						<a href=""><img src="images/icons/feed.png" alt="" /></a>
+						<h1>Recent Activity</h1>
+					</header>
+
+					<p>
+						<strong><a href="">Firefox 3.7</a> was marked complete. </strong>
+						<span class="date">3 days ago</span>
+					</p>
+					<p>
+						<strong><a href="">Open to Choice</a> was added. </strong>
+						<span class="date">3 days ago</span>
+					</p>
+					<p>
+						<strong><a href="">John Doe</a> became a contributor. </strong>
+						<span class="date">3 days ago</span>
+					</p>
+					<p>
+						<strong><a href="">Firefox 3.6</a> was marked complete. </strong>
+						<span class="date">3 days ago</span>
+					</p>
+					<p>
+						<strong><a href="">addons.mozilla.org</a> was added. </strong>
+						<span class="date">3 days ago</span>
+					</p>
+					<p>
+						<strong><a href="">Jim Beam</a> became a contributor. </strong>
+						<span class="date">7 days ago</span>
+					</p>
+				</section>
 			</aside>
+
 		</div>
 
 		<footer>
