@@ -25,6 +25,13 @@ a:hover,
 a:focus {
 	text-decoration: 	underline;
 }
+button {
+	cursor: pointer;
+	padding: 1px;
+}
+input {
+	padding: 2px;
+}
 
 h1,
 nav a,
@@ -79,6 +86,9 @@ nav {
 	}
 	nav a.homepage-link {
 		color: #2a2a2a;
+	}
+	nav input {
+		width: 100px;
 	}
 
 #quick-search {
