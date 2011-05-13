@@ -502,8 +502,8 @@ body > footer {
 /* Fixing the header's and footer's background scaling problem */
 @media (min-width: 1000px) and (max-width: 1500px) {
 
-	body > footer .footer-background,
-	body > header .header-background {
+	.footer-background,
+	.header-background {
 		width: 90%;
 	}
 
