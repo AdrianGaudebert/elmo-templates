@@ -47,9 +47,10 @@ nav,
 }
 
 body > header:after,
+#header-content:after,
 #footer-content:after {
 	clear: 			both;
-	content: 		"";
+	content: 		" ";
 	display: 		block;
 	overflow: 		hidden;
 	visibility: 	hidden;
@@ -113,10 +114,8 @@ nav {
 
 body > header {
 	color: 			#999;
-	height: 		80px;
-	min-height: 	80px;
-	margin-bottom: 	80px;
-	padding: 		10px 0;
+	margin-bottom: 	40px;
+	padding: 		0;
 	position:		relative;
 }
 body#home > header {
@@ -173,20 +172,19 @@ body#home > header {
 	#header-content p {
 		clear: 		both;
 		max-width: 	460px;
+		padding: 		0 0 30px 0;
 	}
 
 #header-nav {
+	float: 				left;
 	list-style-type: 	none;
 	margin: 			0;
-	float: 				left;
-	height: 			100%;
 }
 	#header-nav li {
 		background: 	none;
-		padding: 		0;
 		float: 			left;
+		padding: 		0 0 30px 0;
 		position: 		relative;
-		height: 		100%;
 	}
 	#header-nav a,
 	#header-nav span {
