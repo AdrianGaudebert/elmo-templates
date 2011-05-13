@@ -27,8 +27,16 @@
 			-->
 
 			<div>
-				<a href="homepage-login.html">Sign in</a> |
-				<a href="">Register</a>
+				<form method="post" action="homepage-login-success.html">
+					<label>
+						<input type="text" name="user_name" placeholder="Username" value="John">
+						<span class="error">Please enter a correct username and password. <br />Note that both fields are case-sensitive.</span>
+					</label>
+					<label>
+						<input type="password" name="user_pwd" placeholder="Password">
+					</label>
+					<button type="submit" class="button">OK</button>
+				</form>
 			</div>
 
 			<ul>
