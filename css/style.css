@@ -145,7 +145,6 @@ body#home > header {
 	#header-content h1 {
 		float: 			left;
 		margin: 		0;
-		max-width:		440px;
 		min-width:		270px;
 		z-index: 		2;
 	}
