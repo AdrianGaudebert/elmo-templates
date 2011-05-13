@@ -88,7 +88,49 @@ nav {
 		color: #2a2a2a;
 	}
 	nav input {
-		width: 100px;
+		display: block;
+		margin: 0 2px;
+		width: 150px;
+	}
+	nav label {
+		float: left;
+		text-align: center;
+	}
+	nav .error {
+		background-color: 	#666;
+		border: 			1px solid #333;
+		border-radius: 		3px;
+		color: 				white;
+		display: 			inline-block;
+		margin: 			3px 2px;
+		padding: 			3px 5px;
+		position: 			relative;
+	}
+	nav .error:after {
+		content: 				"";
+		height: 				0;
+		position: 				absolute;
+		width: 					0;
+
+		border: 				7px solid transparent;
+		border-bottom-color: 	#666;
+
+		top: 					-14px;
+		left: 					50%;
+		margin-left: 			-3px;
+	}
+	nav .error:before {
+		content: 				"";
+		height: 				0;
+		position: 				absolute;
+		width: 					0;
+
+		border: 				8px solid transparent;
+		border-bottom-color: 	#333;
+
+		top: 					-16px;
+		left: 					50%;
+		margin-left: 			-4px;
 	}
 
 #quick-search {
