@@ -38,8 +38,8 @@ nav a,
 /* {{{ 960.gs */
 
 nav,
-body > header .header-content,
-body > footer .footer-content,
+.header-content,
+.footer-content,
 #body-content {
   margin-left: 	auto;
   margin-right: auto;
@@ -47,7 +47,7 @@ body > footer .footer-content,
 }
 
 body > header:after,
-body > footer .footer-content:after {
+.footer-content:after {
 	clear: both;
 	content: "";
 	display: block;
@@ -121,18 +121,6 @@ body > header {
 body#home > header {
 	height: auto;
 }
-	body > header .header-background {
-		background: 	#2a2a2a;
-		background: 	rgba(38,38,38,0.98);
-		border-bottom: 	10px solid #a5151e;
-		height: 		100%;
-		margin: 		0 0 15px 0;
-		position: 		absolute;
-		right:			0;
-		width: 			85%;
-		min-width:		1100px;
-		z-index: 		-1;
-	}
 	body > header h1 {
 		float: 			left;
 		margin: 		0;
@@ -165,14 +153,26 @@ body#home > header {
 		body > header h1 span {
 			color: gray;
 		}
-		body > header .header-content {
-			height: 100%;
-			padding: 20px 0 0 0;
-		}
-			body > header .header-content p {
-				clear: both;
-				max-width: 460px;
-			}
+.header-background {
+	background: 	#2a2a2a;
+	background: 	rgba(38,38,38,0.98);
+	border-bottom: 	10px solid #a5151e;
+	height: 		100%;
+	margin: 		0 0 15px 0;
+	position: 		absolute;
+	right:			0;
+	width: 			85%;
+	min-width:		1100px;
+	z-index: 		-1;
+}
+.header-content {
+	height: 100%;
+	padding: 20px 0 0 0;
+}
+	.header-content p {
+		clear: both;
+		max-width: 460px;
+	}
 
 #header-nav {
 	list-style-type: 	none;
@@ -343,13 +343,13 @@ body#home > header {
 		margin-right: 	0;
 	}
 	#main-content .introduction {
-		background-color: white;
-		background-image: url(../images/introduction-background.jpg);
-		background-repeat: no-repeat;
-		background-position: bottom right;
-		min-width: 679px;
+		background-color: 		white;
+		background-image: 		url(../images/introduction-background.jpg);
+		background-repeat: 		no-repeat;
+		background-position: 	bottom right;
+		min-width: 				679px;
 	}
-		#main-content article.introduction h1,
+		#main-content .introduction h1,
 		#body-content aside h1 {
 			color: #a5151e;
 		}
@@ -358,52 +358,47 @@ body#home > header {
 /* {{{ Footer */
 
 body > footer {
-	clear: both;
-	color: #999;
-	margin: 105px 0 0 0;
-	position:		relative;
+	clear: 		both;
+	color: 		#999;
+	margin: 	105px 0 0 0;
+	position:	relative;
 }
-
-	body > footer .footer-background {
-		background: 	#2a2a2a;
-		height: 		100%;
-		margin: 		0 0 0 15%;
-		position: 		absolute;
-		right:			0;
-		width: 			85%;
-		min-width:		1100px;
-		z-index: 		-1;
+	body > footer h1,
+	body > footer h2,
+	body > footer h3,
+	body > footer h4,
+	body > footer h5,
+	body > footer h6,
+	body > footer p {
+		color:#999;
 	}
-	body > footer .footer-content {
-		padding: 25px 0 30px 0;
-	}
-	body > footer h1, body > footer h2, body > footer h3, body > footer h4, body > footer h5, body > footer h6, body > footer p { color:#999; }
-	.footer-nav { list-style:none; margin:0; }
-	.footer-nav li { font-size:12px; background:none; padding-left:0; margin-bottom: 0.25em; }
-	.footer-nav-title { font-family:Arial, sans-serif; font-size:12px; }
-	body > footer .col-span { font-size:13px; }
-	body > footer .six-col { background:#2a2a2a; }
-	#copyright { font-size:11px; padding-top:11px; }
-	#copyright-links { line-height:1; }
-	#copyright-links a { font-size:11px; }
-
-	#languages { float:right; margin-left:20px; }
-	#languages select { margin-left:10px; }
-
-	body > footer .footer-content div,
-	body > footer .footer-content p {
+.footer-content {
+	padding: 25px 0 30px 0;
+}
+	.footer-content div,
+	.footer-content p {
 		float: left;
 		max-width: 480px;
 	}
-	body > footer .footer-content img {
+	.footer-content img {
 		width: 50px;
 	}
-	body > footer .footer-content p {
+	.footer-content p {
 		margin-left: 15px;
 	}
-	body > footer .footer-content .notices {
+	.footer-content .notices {
 		float: right;
 	}
+.footer-background {
+	background: 	#2a2a2a;
+	height: 		100%;
+	margin: 		0 0 0 15%;
+	position: 		absolute;
+	right:			0;
+	width: 			85%;
+	min-width:		1100px;
+	z-index: 		-1;
+}
 
 #template-bottom-background {
 	background: transparent url(../images/footer-background.jpg) no-repeat left bottom;
@@ -523,14 +518,14 @@ body > footer {
 		min-width: 100%;
 	}
 	body > *,
-	body > header .header-content {
+	.header-content {
 		padding-left: 	5px;
 		padding-right: 	5px;
 	}
 
 	nav,
-	body > header .header-content,
-	body > footer .footer-content,
+	.header-content,
+	.footer-content,
 	#body-content,
 	#body-content aside,
 	#main-content,
