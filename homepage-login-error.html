@@ -27,9 +27,17 @@
 			-->
 
 			<div>
-				<input type="text" name="user_name" value="Username">
-				<input type="password" name="user_pwd" value="Password">
-				<button type="submit" class="button">OK</button>
+				<form method="post" action="">
+					<label>
+						<input type="text" name="user_name" placeholder="Username" value="John">
+						<span class="error">This field is required.</span>
+					</label>
+					<label>
+						<input type="password" name="user_pwd" placeholder="Password">
+						<span class="error">This field is required.</span>
+					</label>
+					<button type="submit" class="button">OK</button>
+				</form>
 			</div>
 
 			<ul>
