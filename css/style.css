@@ -90,7 +90,7 @@ nav {
 	nav input {
 		display: block;
 		margin: 0 2px;
-		width: 150px;
+		width: 130px;
 	}
 	nav label {
 		float: left;
@@ -104,32 +104,28 @@ nav {
 		display: 			inline-block;
 		margin: 			3px 2px;
 		padding: 			3px 5px;
-		position: 			relative;
+		position: 			absolute;
 	}
+	nav .error:before,
 	nav .error:after {
 		content: 				"";
 		height: 				0;
+		left: 					20%;
 		position: 				absolute;
 		width: 					0;
-
+	}
+	nav .error:after {
 		border: 				7px solid transparent;
 		border-bottom-color: 	#666;
 
 		top: 					-14px;
-		left: 					50%;
 		margin-left: 			-3px;
 	}
 	nav .error:before {
-		content: 				"";
-		height: 				0;
-		position: 				absolute;
-		width: 					0;
-
 		border: 				8px solid transparent;
 		border-bottom-color: 	#333;
 
 		top: 					-16px;
-		left: 					50%;
 		margin-left: 			-4px;
 	}
 
