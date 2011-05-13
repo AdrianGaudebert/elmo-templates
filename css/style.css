@@ -121,11 +121,36 @@ body > header {
 body#home > header {
 	height: auto;
 }
+#header-background {
+	background: 	#2a2a2a;
+	background: 	rgba(38,38,38,0.98);
+	border-bottom: 	10px solid #a5151e;
+	height: 		100%;
+	margin: 		0 0 15px 0;
+	position: 		absolute;
+	right:			0;
+	width: 			85%;
+	min-width:		1100px;
+	z-index: 		-1;
+}
+#header-content {
+	height: 	100%;
+	padding: 	20px 0 0 0;
+}
+	#header-content p {
+		clear: 		both;
+		max-width: 	460px;
+		padding: 	0 0 30px 0;
+	}
 	#header-content h1 {
 		float: 			left;
 		margin: 		0;
+		max-width:		440px;
 		min-width:		270px;
 		z-index: 		2;
+	}
+	#home #header-content h1 {
+		width:		auto;
 	}
 		#header-content h1 a,
 		#header-content h1 a:link,
@@ -152,31 +177,8 @@ body#home > header {
 		}
 		#header-content h1 span {
 			color: gray;
+			font-size: 0.8em;
 		}
-#header-background {
-	background: 	#2a2a2a;
-	background: 	rgba(38,38,38,0.98);
-	border-bottom: 	10px solid #a5151e;
-	height: 		100%;
-	margin: 		0 0 15px 0;
-	position: 		absolute;
-	right:			0;
-	width: 			85%;
-	min-width:		1100px;
-	z-index: 		-1;
-}
-#header-content {
-	height: 	100%;
-	padding: 	20px 0 0 0;
-}
-	#header-content h1 {
-		max-width: 	350px;
-	}
-	#header-content p {
-		clear: 		both;
-		max-width: 	460px;
-		padding: 	0 0 30px 0;
-	}
 
 #header-nav {
 	float: 				left;
