@@ -121,16 +121,16 @@ body > header {
 body#home > header {
 	height: auto;
 }
-	body > header h1 {
+	#header-content h1 {
 		float: 			left;
 		margin: 		0;
 		min-width:		270px;
 		z-index: 		2;
 	}
-		body > header h1 a,
-		body > header h1 a:link,
-		body > header h1 a:active,
-		body > header h1 a:visited {
+		#header-content h1 a,
+		#header-content h1 a:link,
+		#header-content h1 a:active,
+		#header-content h1 a:visited {
 			display: 			inline;
 			font-weight: 		bold;
 			letter-spacing: 	-2px;
@@ -140,17 +140,17 @@ body#home > header {
 			padding: 			0;
 			text-shadow: 		0 1px 5px rgba(0,0,0,0.4);
 		}
-		body > header h1 a:hover,
-		body > header h1 a:focus {
+		#header-content h1 a:hover,
+		#header-content h1 a:focus {
 			text-decoration: 	none;
 			color: 				#eee;
 			text-shadow: 		0 1px 5px rgba(0,0,0,0.4),
 								0 0 10px rgba(255,255,255,0.4);
 		}
-		body > header h1 img {
+		#header-content h1 img {
 			vertical-align:	middle;
 		}
-		body > header h1 span {
+		#header-content h1 span {
 			color: gray;
 		}
 #header-background {
@@ -169,10 +169,13 @@ body#home > header {
 	height: 	100%;
 	padding: 	20px 0 0 0;
 }
+	#header-content h1 {
+		max-width: 	350px;
+	}
 	#header-content p {
 		clear: 		both;
 		max-width: 	460px;
-		padding: 		0 0 30px 0;
+		padding: 	0 0 30px 0;
 	}
 
 #header-nav {
