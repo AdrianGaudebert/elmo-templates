@@ -136,6 +136,7 @@ body#home > header {
 #header-content {
 	height: 	100%;
 	padding: 	20px 0 0 0;
+	position: 	relative;
 }
 	#header-content p {
 		clear: 		both;
@@ -175,13 +176,12 @@ body#home > header {
 			vertical-align:	middle;
 		}
 		#header-content h1 span {
-			color: gray;
-			font-size: 0.8em;
+			color: 		gray;
+			font-size: 	0.8em;
 		}
 		#header-content > div {
-			border: 1px solid red;
-			float: left;
-			text-align: right;
+			float: 			left;
+			padding-right: 	160px;
 		}
 
 #header-nav {
@@ -229,8 +229,9 @@ body#home > header {
 	}
 
 #header-options {
-	float: 		right;
 	padding: 	20px 0 0 0;
+	position: 	absolute;
+	right:		0px;
 }
 	#header-options .button {
 		background-color: 			#deb154;
